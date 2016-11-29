@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container" ng-controller="BlogController as ctrl">
+
+Welcome to Blogs
+<div ng-repeat="Blog in ctrl.blogs">
+<a href = "#" ng-click="ctrl.getSelectedBlog(Blog.id)"> Title {{Blog.title}} is Created BY: {{Blog.userid}} </a>
+
+</div>
+
+</div>
+
+</body>
+</html>
